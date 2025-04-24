@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 from df import dataframe
-
 class Analizer:
     def __init__(self, df):
         self.df = df.copy()
@@ -30,8 +29,6 @@ class Analizer:
     
     # Analisi temporali per giorni
     def filter_by_day(self, day):
-        if 'Date' in self.df.columns:
-            raise ValueError("Date column not found in DataFrame")
         return self.df[self.df['Date'] >= pd.to_datetime(day)] # Filter tracks by a specific day
     
     def daily_streams_custom(self, day):
@@ -44,9 +41,9 @@ class Analizer:
     
     # Analisi temporali per mesi specifici
     def filter_by_month_range(self, start_month, end_month=None): # Filter tracks by one month or a range of months
-        self.df['Month'] = self.df['Date'].dt.to_period('ME') # Create a new column with the month
-        start = pd.Period(start_month, freq='ME')
-        end = pd.Period(end_month, freq='ME')
+        self.df['Month'] = self.df['Date'].dt.to_period('M') # Create a new column with the month
+        start = pd.Period(start_month, freq='M')
+        end = pd.Period(end_month, freq='M')
         return self.df[(self.df['Month'] >= start) & (self.df['Month'] <= end)]
     
     def top_track_in_month(self, start_month, end_month=None):
@@ -62,3 +59,6 @@ class Analizer:
         df_filtered = self.filter_by_month_range(start_month, end_month)
         return df_filtered.groupby('Month')['Streams'].sum()# Get the monthly streams for a specific month or range of months
 
+analisis = Analizer(dataframe()) # Create an instance of the Analizer class with the DataFrame
+print(analisis.daily_streams_custom('2018-01-01')) # Print the top tracks
+print(analisis.top_track_in_month('2018-01', '2018-03')) # Print the top artists
