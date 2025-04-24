@@ -15,7 +15,7 @@ Le principali attività di questo progetto includono:
 
 Il progetto è diviso in vari moduli per una gestione più semplice e chiara dei dati:
 
-- **`analisi.py`**: Gestisce il caricamento, la pulizia e la preparazione dei dati.
+- **`analisi.py`**: Contiene funzioni per analisi dei dati.
 - **`df.py`**: Definisce il DataFrame che contiene le classifiche e le operazioni su di esso.
 - **`main.py`**: È il punto di ingresso principale, che orchestrerà l'esecuzione del programma.
 - **`statistical_analysis.py`**: Contiene funzioni di analisi statistica sui dati.
