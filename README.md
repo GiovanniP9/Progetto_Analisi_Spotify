@@ -32,7 +32,7 @@ Il progetto è diviso in vari moduli per una gestione più semplice e chiara dei
 
 Il progetto è stato sviluppato da un team di tre membri:
 
-- **Giovanni**: Responsabile per la fase di analisi, inclusa la scrittura della classe `Analisi`.
+- **Giovanni**: Responsabile per la fase di analisi, inclusa la scrittura della classe `Analisi` e del `Main`.
 - **Marco**: Ha lavorato sulla visualizzazione grafica, creando la classe `Visualizza`.
 - **Nunzio**: Ha sviluppato la classe `StatisticalAnalyzer`, che ha contribuito all'analisi dei dati.
 
