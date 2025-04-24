@@ -1,8 +1,9 @@
 import numpy as np
 import pandas as pd
+from df import dataframe
 
 class Analizer:
-    def __init__(self, df: pd.DataFrame):
+    def __init__(self, df):
         self.df = df.copy()
         if 'Date' in self.df.columns:
             self.df['Date'] = pd.to_datetime(self.df['Date']) # Convert to datetime
@@ -61,6 +62,3 @@ class Analizer:
         df_filtered = self.filter_by_month_range(start_month, end_month)
         return df_filtered.groupby('Month')['Streams'].sum()# Get the monthly streams for a specific month or range of months
 
-    
-    
-        
