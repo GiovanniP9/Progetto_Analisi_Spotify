@@ -60,5 +60,5 @@ Il progetto è stato sviluppato da un team di tre membri:
 [Linkedin](https://github.com/Pastierno) | [Mail]()
 - **Giovanni**
 [Linkedin](https://www.linkedin.com/in/giovanni-pisaniello-094201317/) | [Mail](pisaniellogiovanni53@gmail.com)
- **Nunzio**
+- **Nunzio**
 [Linkedin](https://www.linkedin.com/in/nunzio-de-cicco/) | [Mail](decicconunzio@gmail.com)
