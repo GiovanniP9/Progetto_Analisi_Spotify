@@ -15,10 +15,12 @@ Le principali attività di questo progetto includono:
 
 Il progetto è diviso in vari moduli per una gestione più semplice e chiara dei dati:
 
-- **`analisi.py`**: Contiene funzioni per analisi dei dati.
-- **`df.py`**: Definisce il DataFrame che contiene le classifiche e le operazioni su di esso.
 - **`main.py`**: È il punto di ingresso principale, che orchestrerà l'esecuzione del programma.
-- **`statistical_analysis.py`**: Contiene funzioni di analisi statistica sui dati.
+- **`menus.py`**: Contiene tutti i menu principali a cui è possibile accedere dal main.
+- **`data_analysis.py`**: Contiene funzioni per analisi dei dati riguardanti il dataframe delle classifiche spotify.
+- **`data_cleaning.py`**: Definisce il DataFrame che contiene le classifiche e le operazioni su di esso.
+- **`utils.py`**: È il modulo che contiene i decoratori.
+- **`statistical_analysis.py`**: Contiene funzioni di analisi statistica di dati numerici.
 - **`visualization.py`**: Gestisce la creazione dei grafici per visualizzare le tendenze e le performance musicali.
 
 ### 📈 **Caratteristiche principali**
@@ -28,13 +30,13 @@ Il progetto è diviso in vari moduli per una gestione più semplice e chiara dei
 - Analisi delle performance per **artista** e **album**.
 - **Visualizzazioni interattive** per una facile interpretazione dei dati.
 
-## 🧑‍💻 Collaboratori
+## 🔍 Documentazione
 
 Il progetto è stato sviluppato da un team di tre membri:
 
-- **Giovanni**: Responsabile per la fase di analisi, inclusa la scrittura della classe `Analisi` e del `Main`.
-- **Marco**: Ha lavorato sulla visualizzazione grafica, creando la classe `Visualizza`.
-- **Nunzio**: Ha sviluppato la classe `StatisticalAnalyzer`, che ha contribuito all'analisi dei dati.
+- **Giovanni**: Responsabile per la fase di analisi del dataframe delle classifiche spotify, inclusa la scrittura della classe `DataframeAnalyzer` e del file di avviamento `main.py`.
+- **Marco**: Ha lavorato sulla visualizzazione grafica, creando la classe `Visualyzer`, assicurandosi della corretta integrazione dei moduli di analisi (`data_analysis.py` e `statistical_analysis.py`).
+- **Nunzio**: Ha sviluppato la classe `StatisticalAnalyzer`, che ha contribuito all'analisi dei dati numerici, e si è occupato del refactoring del file di avviamento `main.py` disaccoppiando le dipendenze e scrivendo i file `menus.py` e `utils.py`.
 
 ## 🛠 Requisiti
 
@@ -48,4 +50,16 @@ Installa le dipendenze con il comando:
 
 ```bash
 pip install pandas matplotlib seaborn
+```
+vedi anche il file requirements.txt
 
+## 🧑‍💻 Autori
+
+Il progetto è stato sviluppato da un team di tre membri:
+
+- **Marco**
+[Linkedin](https://github.com/Pastierno) | [Mail]()
+- **Giovanni**
+[Linkedin](https://www.linkedin.com/in/giovanni-pisaniello-094201317/) | [Mail](pisaniellogiovanni53@gmail.com)
+- **Nunzio**
+[Linkedin](https://www.linkedin.com/in/nunzio-de-cicco/) | [Mail](decicconunzio@gmail.com)
