@@ -58,7 +58,7 @@ vedi anche il file requirements.txt
 Il progetto è stato sviluppato da un team di tre membri:
 
 - **Marco**
-[Linkedin]([https://github.com/Pastierno](https://www.linkedin.com/in/marco-patierno-a933a6352/)) | [Mail]()
+[Linkedin](https://www.linkedin.com/in/marco-patierno-a933a6352/) | [Mail]()
 - **Giovanni**
 [Linkedin](https://www.linkedin.com/in/giovanni-pisaniello-094201317/) | [Mail](pisaniellogiovanni53@gmail.com)
 - **Nunzio**
