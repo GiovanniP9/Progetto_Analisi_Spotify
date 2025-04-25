@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
 import pandas as pd
 import matplotlib.dates as mdates
 from matplotlib.colors import LinearSegmentedColormap
-from analisi import Analizer
-from df import dataframe
+from src.data_analysis import DataframeAnalizer
+from src.data_cleaning import dataframe # clean the dataframe
+
 
 class Visualizer:
     def __init__(self, analizer=None):
@@ -13,7 +13,7 @@ class Visualizer:
         Inizializza il visualizzatore con un oggetto Analizer.
         
         Args:
-            analizer: Un'istanza di Analizer o None (in tal caso verrà creata)
+            analizer: Un'istanza di DataframeAnalizer o None (in tal caso verrà creata)
         """
         # Configurazione stile
         plt.style.use('seaborn-v0_8-whitegrid')
@@ -24,7 +24,7 @@ class Visualizer:
         # Se non viene fornito un analizzatore, creane uno nuovo
         if analizer is None:
             df = dataframe()
-            self.analizer = Analizer(df)
+            self.analizer = DataframeAnalizer(df)
         else:
             self.analizer = analizer
 
@@ -424,6 +424,9 @@ class Visualizer:
             # Visualizzazioni temporali
             self.visualize_daily_streams(min_date)
             self.visualize_monthly_streams(min_month)
+
+
+# ESEMPIO DI UTILIZZO
 
 # # Crea un'istanza di Visualizer (che caricherà automaticamente il dataframe)
 # viz = Visualizer()
